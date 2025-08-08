@@ -8,8 +8,8 @@
     prompt: Please enter the GREETING
     private: false
   tasks:
-  - name: GREETING
-    vars:
-    GREETING: "Hello from TASK"
-    ansible.builtin.debug:
+   - name: GREETING
+     vars:
+     GREETING: "Hello from TASK"
+     ansible.builtin.debug:
       msg: "{{ GREETING }}"  
