@@ -1,0 +1,14 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars:
+   COURSE: ansible   #eql ro COURSE=Ansible in shell , shell we refewr $VAR 0r ${VAR}
+   DURATION: 10HR
+   TRAINER: Sivakumar
+  tasks:
+  - name: print course information
+    vars:
+     COURSE: ansible
+     ansible.builtin.debug:
+     #vars
+      msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TRAINER }}" 
