@@ -13,4 +13,4 @@
   - name: redirect ls output to a file using command
     ansible.builtin.command: "ls -ltr"
     #ansible.builtin.shell: "ls -ltr > /tmp/output.txt"
-    register: command_result
+    register: command_output
