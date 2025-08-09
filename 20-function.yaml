@@ -9,14 +9,14 @@
       msg: "Hello, {{ person | default('Ramesh') }}"
 
   - name: print names
-    ansible.builtin.debug: 
-     msg: "Hello {{ persons | split(',') }}"
+    ansible.builtin.debug:
+      msg: "Hello {{ persons | split(',') }}"
 
-  - names: convert map into list
+  - name: convert map into list
     vars:
       course:
-       name: ansible
-       duration: 10HR
-       trainer: Sivasir
+        name: ansible
+        duration: 10HR
+        trainer: sivakumar
     ansible.builtin.debug:
-      msg: "Course info: {{ course | dict2items }}"
+      msg: "Course Info: {{ course | dict2items  }}"
